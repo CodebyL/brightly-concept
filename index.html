@@ -2,483 +2,305 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Brightly Electric, Inc. (website concept)</title>
-<meta name="description" content="Website concept for Brightly Electric, Inc., an electrician serving from Deer Park, NY. Emergency repairs, panels, circuit breakers and ceiling fans. Rated 5.0 from 62 Google reviews.">
-<meta name="robots" content="noindex">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<meta name="description" content="Website concept for Brightly Electric, Inc., an electrician serving from Deer Park, NY: emergency repairs, breaker boxes, circuit breakers and ceiling fans.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{
- --ink:#0a1230;--ink-2:#121d45;--ink-3:#1c2a5c;--line:#2a3a70;--warm:#fff8e8;--warm-2:#f6ecd4;--fil:#ffc83d;--fil-2:#ffdb7a;--amber:#e08a00;--mute:#b8c0dc;--text:#141a33;--soft:#4a5070;--red:#ff6a5c;--red-d:#b3261e;
- --s1:4px;--s2:8px;--s3:16px;--s4:24px;--s5:32px;--s6:48px;--s7:72px;--s8:112px;
- --wrap:1200px;--r:16px;
- --head:"Outfit",system-ui,sans-serif;--mono:"Space Mono",ui-monospace,monospace;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
-body{margin:0;background:var(--warm);color:var(--text);font-family:var(--head);font-size:18px;line-height:1.6;overflow-x:hidden}
-svg{display:block;max-width:100%}
-a{color:inherit}
-:focus-visible{outline:3px solid var(--fil);outline-offset:3px;border-radius:6px}
-.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--s4)}
-.skip{position:absolute;left:-999px;top:0;background:var(--fil);color:var(--ink);padding:var(--s2) var(--s3);z-index:99;font-weight:700}
-.skip:focus{left:var(--s3);top:var(--s3)}
-h1,h2,h3{font-family:var(--head);font-weight:700;line-height:1.04;margin:0;letter-spacing:-.025em}
-p{margin:0 0 var(--s3)}
-.mono{font-family:var(--mono);font-size:.8rem;letter-spacing:.06em;text-transform:uppercase}
-.label{font-family:var(--mono);font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--amber);margin:0 0 var(--s3);font-weight:700}
-.dark .label{color:var(--fil)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:var(--s2);min-height:54px;padding:0 var(--s5);border-radius:999px;font:600 1.02rem var(--head);text-decoration:none;cursor:pointer;border:2px solid transparent;transition:background .2s,box-shadow .2s}
-.btn-fil{background:var(--fil);color:var(--ink)}.btn-fil:hover{background:var(--fil-2);box-shadow:0 0 0 6px rgba(255,200,61,.18)}
-.btn-ink{background:var(--ink);color:var(--warm)}.btn-ink:hover{background:var(--ink-3)}
-.btn-out{border-color:rgba(255,248,232,.6);color:var(--warm);background:transparent}.btn-out:hover{border-color:var(--warm);background:rgba(255,248,232,.08)}
-
-.concept{background:var(--fil);color:var(--ink);text-align:center;font-size:.85rem;padding:var(--s2) var(--s3)}
-.concept a{font-weight:700}
-
-header.site{position:sticky;top:0;z-index:40;background:rgba(10,18,48,.97);color:var(--warm);border-bottom:1px solid var(--line)}
-.hd{display:flex;align-items:center;justify-content:space-between;gap:var(--s3);min-height:76px}
-.logo{display:flex;align-items:center;gap:var(--s3);text-decoration:none}
-.logo svg{width:40px;height:40px;flex:none}
-.logo b{font-weight:800;font-size:1.4rem;letter-spacing:-.03em;line-height:1}
-.logo small{display:block;font-family:var(--mono);font-size:.68rem;color:var(--mute);letter-spacing:.08em;margin-top:2px}
-nav.main ul{list-style:none;margin:0;padding:0;display:flex}
-nav.main a{display:flex;align-items:center;min-height:44px;padding:0 var(--s3);text-decoration:none;color:var(--mute);font-weight:500}
-nav.main a:hover{color:var(--warm)}
-.hd-call{display:flex;align-items:center;gap:var(--s3)}
-.tel{font-weight:700;text-decoration:none;min-height:44px;display:flex;align-items:center;gap:var(--s2);color:var(--fil);font-size:1.15rem}
-.menu-btn{display:none;min-height:44px;min-width:44px;border:1.5px solid var(--mute);background:none;color:var(--warm);border-radius:999px;font:600 .95rem var(--head);padding:0 var(--s4);cursor:pointer}
-
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+:root{--bg:#fbfaf6;--card:#fff;--ink:#101833;--soft:#545b73;--line:#e3e2da;--volt:#ffc928;--volt-l:#fff3c4;--blue:#2350d8;--blue-l:#e6ecfc;--red:#c8312b;--ease:cubic-bezier(.2,.7,.2,1);--head:"Sora",system-ui,sans-serif;--sans:"Instrument Sans",system-ui,sans-serif;--wrap:1200px;--gap:20px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.6 var(--sans)}
+img{max-width:100%;display:block}
+button,input,select,textarea{font:inherit;color:inherit}
+h1,h2,h3{margin:0;font-family:var(--head);font-weight:700;letter-spacing:-.03em;line-height:1.04}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+[hidden]{display:none!important}
+.skip{position:absolute;left:-999px;top:0;z-index:999;padding:.8rem 1rem;background:var(--ink);color:#fff}.skip:focus{left:1rem}
+.wrap{width:min(100% - 2.4rem,var(--wrap));margin-inline:auto}
+.lab{margin:0;font:700 .76rem var(--head);letter-spacing:.14em;text-transform:uppercase;color:var(--blue)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:52px;padding:.6rem 1.4rem;border-radius:12px;border:2px solid var(--ink);background:var(--ink);color:#fff;font:600 1rem var(--head);text-decoration:none;cursor:pointer;transition:transform .2s var(--ease),background .2s,color .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.v{background:var(--volt);border-color:var(--volt);color:var(--ink)}
+.btn.o{background:transparent;color:var(--ink)}
+.btn.o:hover{background:var(--ink);color:#fff}
+.js .rv{opacity:0;transform:translateY(18px);transition:opacity .7s var(--ease),transform .8s var(--ease);transition-delay:calc(var(--d,0)*70ms)}
+.js .rv.in{opacity:1;transform:none}
+header{position:sticky;top:0;z-index:50;background:rgba(251,250,246,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;gap:1rem;min-height:72px}
+.brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:var(--ink);min-height:44px}
+.brand svg{width:36px;height:36px;flex:none}
+.brand b{font:800 1.2rem/1 var(--head);display:block}
+.brand small{font:600 .7rem var(--head);letter-spacing:.14em;color:var(--soft)}
+nav.main{margin-left:auto;display:none;gap:1.6rem}
+nav.main a{font:600 .94rem var(--head);color:var(--ink);text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
+nav.main a:hover{color:var(--blue)}
+.hc{margin-left:auto}.hc .btn{min-height:44px;padding:.3rem 1rem;font-size:.92rem}
+@media(min-width:1000px){nav.main{display:flex}.hc{margin-left:1.4rem}}
+@media(max-width:380px){.brand small{display:none}}
+.sec{padding-block:clamp(3.6rem,7vw,5.6rem)}
+.head{display:grid;grid-template-columns:minmax(0,1fr);gap:1rem;margin-bottom:2.2rem}
+@media(min-width:900px){.head{grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--gap);align-items:end}}
+.head h2{font-size:clamp(2.2rem,4.4vw,3.4rem);margin-top:.6rem}
+.head p{margin:0;color:var(--soft);max-width:48ch}
+.two{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--gap);align-items:stretch}
+@media(min-width:900px){.two{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:clamp(1.4rem,3vw,2rem);display:flex;flex-direction:column;min-width:0}
 /* hero */
-.dark{background:var(--ink);color:var(--warm)}
-.hero{position:relative;overflow:hidden;transition:background .6s}
-.hero::before{content:"";position:absolute;right:8%;top:-10%;width:720px;height:720px;border-radius:50%;background:radial-gradient(circle,rgba(255,200,61,.42),rgba(255,200,61,.1) 40%,transparent 68%);opacity:0;transition:opacity .7s;pointer-events:none}
-body.lit .hero::before{opacity:1}
-body.lit .hero{background:#101a42}
-.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:var(--s6);align-items:center;padding:var(--s7) 0 var(--s8);position:relative}
-.hero h1{font-size:clamp(3rem,6.6vw,6rem);font-weight:800;margin-bottom:var(--s4)}
-.hero h1 em{font-style:normal;color:var(--fil)}
-.hero .lede{font-size:1.22rem;color:#d9def0;max-width:40ch;margin-bottom:var(--s5)}
-.actions{display:flex;flex-wrap:wrap;gap:var(--s3)}
-.lamp{position:relative;display:grid;justify-items:center}
-.lamp .glass{transition:fill .5s,fill-opacity .5s}
-.lamp .fil-wire{transition:stroke .4s}
-body.lit .lamp .glass{fill:#fff3c4;fill-opacity:.95}
-body.lit .lamp .fil-wire{stroke:#ff9f1a}
-body.lit .lamp .rays{opacity:1}
-.lamp .rays{opacity:0;transition:opacity .6s}
-.switch{margin-top:var(--s4);display:flex;align-items:center;gap:var(--s3)}
-.plate{width:84px;height:124px;border-radius:12px;background:#f2ead6;border:none;display:grid;place-items:center;cursor:pointer;box-shadow:inset 0 -4px 0 #d6cbb0,0 10px 30px rgba(0,0,0,.35);padding:0}
-.plate .tog{width:26px;height:52px;border-radius:6px;background:#fffdf6;box-shadow:0 6px 0 #cfc3a6;transition:transform .25s,box-shadow .25s;transform:translateY(10px)}
-body.lit .plate .tog{transform:translateY(-10px);box-shadow:0 -6px 0 #cfc3a6}
-.switch p{margin:0;font-family:var(--mono);font-size:.8rem;color:var(--mute);max-width:16ch}
-
-.readout{background:var(--ink-2);color:var(--warm);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.readout ul{list-style:none;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr)}
-.readout li{padding:var(--s4) var(--s4);border-left:1px solid var(--line)}
-.readout li:first-child{border-left:0;padding-left:0}
-.readout b{display:block;font-size:2rem;font-weight:700;color:var(--fil);line-height:1.1}
-.readout span{font-family:var(--mono);font-size:.78rem;color:var(--mute);text-transform:uppercase;letter-spacing:.06em}
-
-section{padding:var(--s8) 0}
-.sec-head{max-width:700px;margin-bottom:var(--s6)}
-.sec-head h2{font-size:clamp(2.3rem,4.6vw,3.8rem);margin-bottom:var(--s3)}
-.sec-head p{color:var(--soft);font-size:1.12rem;margin:0}
-.dark .sec-head p{color:var(--mute)}
-
-/* panel schedule */
-.sched-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:var(--s7);align-items:start}
-.door{background:#d9dce4;border-radius:14px;padding:var(--s4);box-shadow:inset 0 0 0 2px #b6bbc8,0 20px 40px rgba(10,18,48,.15)}
-.door .inner{background:#2b3140;border-radius:8px;padding:var(--s4) var(--s3);display:grid;grid-template-columns:1fr 1fr;gap:var(--s2) var(--s4)}
-.brk{display:flex;align-items:center;gap:var(--s2);font-family:var(--mono);font-size:.72rem;color:#c9cede}
-.brk:nth-child(even){flex-direction:row-reverse;text-align:right}
-.brk i{width:44px;height:22px;background:#11151f;border-radius:4px;position:relative;flex:none}
-.brk i::after{content:"";position:absolute;top:3px;left:4px;width:18px;height:16px;border-radius:3px;background:#e9ebf0}
-.brk.on i::after{left:22px;background:var(--fil)}
-.door .main{grid-column:1/-1;display:flex;justify-content:center;align-items:center;gap:var(--s2);font-family:var(--mono);font-size:.72rem;color:#c9cede;margin-bottom:var(--s2)}
-.door .main i{width:90px;height:30px;background:#11151f;border-radius:5px;position:relative}
-.door .main i::after{content:"";position:absolute;top:4px;right:6px;width:40px;height:22px;border-radius:4px;background:#e9ebf0}
-.door figcaption{font-family:var(--mono);font-size:.75rem;color:var(--soft);margin-top:var(--s3);text-align:center}
-.dir{border:2px solid var(--text);border-radius:12px;overflow:hidden;background:#fffdf6}
-.dir-h{display:grid;grid-template-columns:64px 1fr;background:var(--text);color:var(--warm);font-family:var(--mono);font-size:.75rem;letter-spacing:.08em;text-transform:uppercase}
-.dir-h span{padding:var(--s2) var(--s3)}
-.dir ol{list-style:none;margin:0;padding:0}
-.dir li{display:grid;grid-template-columns:64px 1fr;border-top:1px solid #e3d9c2}
-.dir li:first-child{border-top:0}
-.dir .no{font-family:var(--mono);font-weight:700;font-size:1.05rem;padding:var(--s4) var(--s3);border-right:1px solid #e3d9c2;color:var(--amber)}
-.dir .body{padding:var(--s4)}
-.dir h3{font-size:1.45rem;margin-bottom:var(--s1)}
-.dir p{margin:0;color:var(--soft)}
-.dir li.spare .body{color:#8a8774;font-family:var(--mono);font-size:.85rem;padding:var(--s3) var(--s4)}
-
-/* tool */
-.tool-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--s6);align-items:start}
-.sample{display:inline-block;font-family:var(--mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;border:1.5px solid var(--fil);color:var(--fil);padding:2px var(--s2);border-radius:6px;margin-bottom:var(--s4)}
-.sym{list-style:none;margin:0;padding:0;display:grid;gap:var(--s2)}
-.sym label{display:grid;grid-template-columns:24px 1fr;gap:var(--s3);align-items:start;padding:var(--s3) var(--s4);border:1.5px solid var(--line);border-radius:12px;cursor:pointer;min-height:56px;transition:border-color .2s,background .2s}
-.sym label:hover{border-color:var(--mute)}
-.sym input{width:20px;height:20px;margin:3px 0 0;accent-color:var(--fil)}
-.sym label:has(input:checked){border-color:var(--fil);background:rgba(255,200,61,.08)}
-.sym b{display:block;font-weight:600}
-.sym span span{color:var(--mute);font-size:.95rem}
-.result{background:var(--warm);color:var(--text);border-radius:var(--r);padding:var(--s5)}
-.result .lvl{display:inline-flex;align-items:center;gap:var(--s2);font-family:var(--mono);font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:var(--s1) var(--s3);border-radius:999px;background:#e8e2cf;margin-bottom:var(--s3)}
-.result .lvl.ok{background:#dff0d8;color:#1f5a1a}.result .lvl.call{background:#ffe9b8;color:#7a4b00}.result .lvl.urgent{background:#ffd9d4;color:#8f1d14}
-.result h3{font-size:1.9rem;margin-bottom:var(--s3)}
-.result ol{padding-left:var(--s4);margin:0 0 var(--s4)}
-.result li{margin-bottom:var(--s2)}
-.mini{background:#2b3140;border-radius:10px;padding:var(--s3);display:grid;grid-template-columns:repeat(5,1fr);gap:var(--s2);margin-bottom:var(--s4)}
-.mini i{height:28px;background:#11151f;border-radius:4px;position:relative}
-.mini i::after{content:"";position:absolute;top:4px;left:50%;margin-left:-8px;width:16px;height:20px;border-radius:3px;background:#e9ebf0;transform:translateX(8px);transition:transform .3s,background .3s}
-.mini i.trip::after{transform:translateX(0);background:var(--red)}
-.fine{font-size:.88rem;color:var(--soft)}
-.dark .fine{color:var(--mute)}
-.dark .result .fine{color:var(--soft)}
-
+.hero{padding-block:clamp(2.6rem,5vw,4rem)}
+.hero h1{font-size:clamp(2.8rem,5.6vw,4.6rem)}
+.hero h1 span{background:linear-gradient(transparent 62%,var(--volt) 62%);padding:0 .1em}
+.hero .copy{justify-content:center;background:transparent;border:0;padding:0}
+.hero p.l{color:var(--soft);font-size:1.13rem;max-width:44ch;margin:1.3rem 0 1.9rem}
+.cta{display:flex;flex-wrap:wrap;gap:.7rem}
+.room{position:relative;padding:0;overflow:hidden;background:#232b47;transition:background .6s var(--ease);aspect-ratio:5/4}
+.room.on{background:#fff6d6}
+.room svg{position:absolute;inset:0;width:100%;height:100%}
+.room .glow{opacity:0;transition:opacity .6s var(--ease)}
+.room.on .glow{opacity:1}
+.room .wall{fill:#2c3557;transition:fill .6s}.room.on .wall{fill:#fff1c2}
+.room .floor{fill:#1e2540;transition:fill .6s}.room.on .floor{fill:#efdcae}
+.room .bulb{fill:#4a5170;transition:fill .4s}.room.on .bulb{fill:#ffd84a}
+.room .blade{fill:#3a4262;transition:fill .6s}.room.on .blade{fill:#c49a63}
+.room .fan{transform-origin:300px 120px;transform-box:view-box}
+.room.on .fan{animation:spin 1.6s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.sw{position:absolute;right:20px;bottom:20px;display:flex;align-items:center;gap:.8rem;background:#fff;border-radius:16px;padding:.55rem .7rem .55rem 1rem;box-shadow:0 14px 30px -14px rgba(0,0,0,.45)}
+.sw span{font:600 .9rem var(--head)}
+.tog{position:relative;width:52px;height:78px;border-radius:12px;border:2px solid var(--ink);background:#f1f0ea;cursor:pointer;padding:0}
+.tog i{position:absolute;left:8px;right:8px;height:30px;border-radius:8px;background:var(--ink);bottom:8px;transition:bottom .3s var(--ease),background .3s}
+.tog[aria-pressed=true] i{bottom:36px;background:var(--volt)}
+.tag{position:absolute;left:20px;top:20px;background:rgba(255,255,255,.95);border-radius:12px;padding:.45rem .8rem;font:600 .86rem var(--head)}
+/* stats */
+.stats{border-block:1px solid var(--line);background:var(--card)}
+.stats ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.stats ul{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.stats li{padding:1.4rem 1.2rem;border-left:1px solid var(--line);text-align:center}
+.stats li:nth-child(odd){border-left:0}
+@media(min-width:900px){.stats li:nth-child(odd){border-left:1px solid var(--line)}.stats li:first-child{border-left:0}}
+@media(max-width:899px){.stats li:nth-child(n+3){border-top:1px solid var(--line)}}
+.stats b{display:block;font:800 2rem/1.1 var(--head)}
+.stats span{font-size:.9rem;color:var(--soft)}
+/* services */
+.sv{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--gap)}
+@media(min-width:640px){.sv{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1000px){.sv{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.svc{gap:.7rem;min-height:290px}
+.svc .ic{width:56px;height:56px;border-radius:14px;background:var(--volt-l);display:grid;place-items:center}
+.svc .ic svg{width:30px;height:30px}
+.svc .n{font:700 .8rem var(--head);color:var(--soft);letter-spacing:.1em}
+.svc h3{font-size:1.35rem}
+.svc p{margin:0;color:var(--soft);font-size:.97rem;flex:1}
+.svc a{font:600 .92rem var(--head);color:var(--blue);text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
+/* tripping */
+.trip{background:var(--blue-l)}
+.syms{display:grid;gap:.6rem}
+.sym{display:grid;grid-template-columns:44px minmax(0,1fr);gap:.8rem;align-items:center;text-align:left;width:100%;min-height:72px;border:1.5px solid var(--line);border-radius:14px;background:#fff;padding:.7rem .9rem;cursor:pointer;transition:border-color .2s,box-shadow .2s}
+.sym:hover{border-color:var(--ink)}
+.sym[aria-pressed=true]{border-color:var(--blue);box-shadow:inset 0 0 0 1.5px var(--blue)}
+.sym .k{width:44px;height:44px;border-radius:10px;background:var(--blue-l);display:grid;place-items:center;font:800 1rem var(--head);color:var(--blue)}
+.sym[aria-pressed=true] .k{background:var(--blue);color:#fff}
+.sym b{display:block;font:600 1rem var(--head)}
+.sym small{display:block;color:var(--soft);font-size:.88rem;line-height:1.35}
+.res{gap:1rem}
+.res .meter{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.res .meter i{height:10px;border-radius:6px;background:#eceae2;transition:background .4s}
+.res[data-l="1"] .meter i:nth-child(1){background:#2f9e5a}
+.res[data-l="2"] .meter i:nth-child(-n+2){background:var(--volt)}
+.res[data-l="3"] .meter i{background:var(--red)}
+.res .lvl{font:700 .82rem var(--head);letter-spacing:.12em;text-transform:uppercase;color:var(--soft)}
+.res h3{font-size:clamp(1.7rem,3vw,2.2rem)}
+.res p{margin:0;color:var(--soft)}
+.res ol{margin:0;padding-left:1.2rem;display:grid;gap:.4rem}
+.res .act{margin-top:auto;display:flex;flex-wrap:wrap;gap:.6rem;padding-top:.6rem}
+.res .fine{font-size:.82rem;color:var(--soft);margin:0}
 /* reviews */
-.rev-grid{display:grid;grid-template-columns:auto 1fr 1fr;gap:var(--s6);align-items:stretch}
-.score{display:flex;flex-direction:column;justify-content:center;padding-right:var(--s6);border-right:2px solid var(--text)}
-.score b{font-size:6rem;font-weight:800;line-height:.9;letter-spacing:-.04em}
-.score .st{color:var(--amber);font-size:1.4rem;letter-spacing:4px}
-.quote{margin:0;background:#fffdf6;border:1.5px solid #e3d9c2;border-radius:var(--r);padding:var(--s5);display:flex;flex-direction:column;justify-content:space-between}
-.quote blockquote{margin:0 0 var(--s4);font-size:1.6rem;font-weight:600;line-height:1.25;letter-spacing:-.01em}
-.quote cite{font-style:normal;font-family:var(--mono);font-size:.8rem;color:var(--soft)}
-.quote svg{width:40px;margin-bottom:var(--s3)}
-
-/* area */
-.area-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:var(--s6);align-items:center}
-.area dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:var(--s3) var(--s5)}
-.area dt{font-family:var(--mono);font-size:.78rem;color:var(--fil);text-transform:uppercase;letter-spacing:.08em;padding-top:5px}
-.area dd{margin:0;font-size:1.15rem}
-.wire svg{width:100%}
-
-/* form */
-.form-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:var(--s7);align-items:start}
-.formbox{background:#fffdf6;border:1.5px solid #e3d9c2;border-radius:var(--r);padding:var(--s5)}
-form .row{display:grid;grid-template-columns:1fr 1fr;gap:var(--s3)}
-.field{margin-bottom:var(--s3)}
-.field label,.field legend{display:block;font-weight:600;margin-bottom:var(--s1);font-size:.95rem}
-.field input,.field textarea{width:100%;min-height:52px;padding:var(--s2) var(--s3);border:1.5px solid #c9c1ab;border-radius:10px;font:inherit;background:#fff;color:var(--text)}
-.field textarea{min-height:120px;resize:vertical}
-.field input:focus,.field textarea:focus{outline:3px solid var(--fil);outline-offset:0;border-color:var(--text)}
-[aria-invalid="true"]{border-color:var(--red-d)!important;background:#fff4f2!important}
-fieldset{border:0;padding:0;margin:0 0 var(--s3)}
-.radios{display:flex;flex-wrap:wrap;gap:var(--s2)}
-.radios label{display:flex;align-items:center;gap:var(--s2);min-height:44px;padding:0 var(--s3);border:1.5px solid #c9c1ab;border-radius:999px;cursor:pointer;font-weight:500}
-.radios input{accent-color:var(--ink);width:18px;height:18px}
-.err{color:var(--red-d);font-weight:600;min-height:1.5em;margin:0 0 var(--s2)}
-.demo-note{font-size:.88rem;color:var(--soft);margin:var(--s3) 0 0}
-.done h3{font-size:2rem;margin-bottom:var(--s2)}
-
-footer{background:var(--ink);color:var(--mute);padding:var(--s7) 0}
-.f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:var(--s5);margin-bottom:var(--s5)}
-footer h3{color:var(--warm);font-size:1.2rem;margin-bottom:var(--s2)}
-footer a{color:var(--fil)}
-.disc{border-top:1px solid var(--line);padding-top:var(--s4);font-size:.88rem;max-width:92ch;margin:0}
-.sticky-call{display:none}
-
-@media (max-width:1000px){
- .sched-grid,.tool-grid,.area-grid,.form-grid{grid-template-columns:1fr}
- .door{max-width:460px}
- .rev-grid{grid-template-columns:1fr 1fr}.score{grid-column:1/-1;border-right:0;border-bottom:2px solid var(--text);padding:0 0 var(--s4);flex-direction:row;align-items:baseline;gap:var(--s4);flex-wrap:wrap}
-}
-@media (max-width:900px){
- nav.main{display:none;position:absolute;top:100%;left:0;right:0;background:var(--ink);border-bottom:1px solid var(--line)}
- nav.main.open{display:block}
- nav.main ul{flex-direction:column;padding:var(--s2) var(--s4) var(--s4)}
- .menu-btn{display:inline-flex;align-items:center}
- .hero-grid{grid-template-columns:1fr;padding:var(--s6) 0 var(--s7)}
- .lamp{grid-template-columns:auto auto;align-items:center;justify-content:start;gap:var(--s5)}
- .lamp svg{width:150px}
- .hero::before{right:-30%;top:auto;bottom:-20%;width:520px;height:520px}
- .readout ul{grid-template-columns:1fr 1fr}
- .readout li:nth-child(3){border-left:0;padding-left:0}
- .readout li:nth-child(n+3){border-top:1px solid var(--line)}
-}
-@media (max-width:640px){
- .wrap{padding:0 var(--s3)}
- section{padding:var(--s7) 0}
- .hd .tel{display:none}
- .rev-grid,form .row,.f-grid{grid-template-columns:1fr}
- .score b{font-size:4.4rem}
- .formbox,.result,.quote{padding:var(--s4)}
- .dir-h,.dir li{grid-template-columns:48px 1fr}
- .dir .no{padding:var(--s4) var(--s2)}
- .door .inner{gap:var(--s2)}
- .brk{font-size:.62rem}
- .area dl{grid-template-columns:1fr;gap:0}.area dd{margin-bottom:var(--s3)}
- .lamp svg{width:100px}
- .lamp{gap:var(--s4)}
- .switch{margin-top:0;gap:var(--s2)}
- .switch p{max-width:9ch}
- .sticky-call{display:flex;position:fixed;left:var(--s3);right:var(--s3);bottom:var(--s3);z-index:50;min-height:56px;align-items:center;justify-content:center;background:var(--fil);color:var(--ink);font-weight:700;text-decoration:none;border-radius:999px;box-shadow:0 8px 24px rgba(0,0,0,.35)}
- footer{padding-bottom:120px}
-}
+.rvg{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--gap)}
+@media(min-width:760px){.rvg{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1000px){.rvg{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.rvg .card{gap:.5rem;min-height:210px}
+.rvg .score{background:var(--ink);color:#fff;border-color:var(--ink)}
+.rvg .score b{font:800 3.4rem/1 var(--head);color:var(--volt)}
+.rvg .score span{color:#c9cee0}
+.rvg .st{color:#e3a600;letter-spacing:.12em}
+.rvg h3{font-size:1.25rem}
+.rvg p{margin:0;color:var(--soft);font-size:.96rem}
+.rvg small{margin-top:auto;font-size:.82rem;color:var(--soft)}
+/* contact */
+.info{gap:1.2rem}
+.info h2{font-size:clamp(2rem,3.6vw,2.8rem)}
+.info p{margin:0;color:var(--soft)}
+.info dl{margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--gap)}
+.info dl div{border-top:2px solid var(--ink);padding-top:.7rem}
+.info dt{font:700 .74rem var(--head);letter-spacing:.12em;text-transform:uppercase;color:var(--soft)}
+.info dd{margin:.25rem 0 0;font-weight:600}
+.info dd a{color:var(--ink)}
+.info .mapg{flex:1;min-height:180px;border-radius:14px;background:var(--blue-l);position:relative;overflow:hidden}
+.info .mapg svg{position:absolute;inset:0;width:100%;height:100%}
+form.fm{display:flex;flex-direction:column;gap:1rem;flex:1}
+.fm .r2{display:grid;grid-template-columns:minmax(0,1fr);gap:1rem}
+@media(min-width:560px){.fm .r2{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.fm label{display:grid;gap:.3rem;font:600 .9rem var(--head)}
+.fm input,.fm textarea{min-height:50px;border:1.5px solid var(--line);border-radius:12px;padding:.5rem .8rem;background:var(--bg);font:400 1rem var(--sans)}
+.fm input:focus,.fm textarea:focus{border-color:var(--ink);outline:none;background:#fff}
+.fm .grow{flex:1;display:flex;flex-direction:column}
+.fm textarea{flex:1;min-height:110px;resize:vertical}
+.urg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.5rem}
+.urg button{min-height:48px;border-radius:12px;border:1.5px solid var(--line);background:#fff;font:600 .88rem var(--head);cursor:pointer;padding:0 .4rem}
+.urg button[aria-pressed=true]{background:var(--ink);border-color:var(--ink);color:#fff}
+.urg button[data-u="now"][aria-pressed=true]{background:var(--red);border-color:var(--red)}
+.fm .sub{display:flex;flex-wrap:wrap;align-items:center;gap:1rem}
+.fm .sub .btn{flex:1;min-width:200px}
+.fm .sub p{margin:0;font-size:.84rem;color:var(--soft);flex-basis:100%}
+.err{color:#b3261e;font-size:.8rem;font-weight:600}
+.ok{flex:1;display:flex;flex-direction:column;justify-content:center;gap:.9rem}
+.ok h3{font-size:2rem}.ok p{margin:0;color:var(--soft)}
+footer{border-top:1px solid var(--line);padding-block:2.2rem;color:var(--soft);font-size:.88rem}
+footer .r{display:grid;grid-template-columns:minmax(0,1fr);gap:1rem}
+@media(min-width:760px){footer .r{grid-template-columns:repeat(3,minmax(0,1fr))}}
+footer b{color:var(--ink);font-family:var(--head)}
+footer a{color:var(--ink);font-weight:600}
+footer p{margin:.2rem 0 0}
+footer .dis{margin-top:1.4rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.82rem}
+.mbar{display:none}
+@media(max-width:640px){.mbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:8px;background:var(--bg);border-top:1px solid var(--line)}.mbar .btn{min-height:48px}body{padding-bottom:66px}.hc{display:none}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important}.js .rv{opacity:1;transform:none}}
 </style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<div class="concept">Website concept by <a href="https://www.lisettecolon.com">Lisette Colon</a>. A sample, not the official Brightly Electric, Inc. site.</div>
-
-<header class="site">
- <div class="wrap hd">
-  <a class="logo" href="#top" aria-label="Brightly Electric, home">
-   <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="17" r="12" fill="#ffc83d"/><rect x="15" y="28" width="10" height="7" rx="2" fill="#b8c0dc"/><path d="M15 17 l3 -4 l2 6 l2 -6 l3 4" stroke="#0a1230" stroke-width="2" fill="none" stroke-linejoin="round"/></svg>
-   <span><b>Brightly Electric</b><small>DEER PARK, NY</small></span>
-  </a>
-  <nav class="main" id="nav" aria-label="Main">
-   <ul>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#tripping">What's tripping?</a></li>
-    <li><a href="#reviews">Reviews</a></li>
-    <li><a href="#area">Area and hours</a></li>
-    <li><a href="#contact">Contact</a></li>
-   </ul>
-  </nav>
-  <div class="hd-call">
-   <a class="tel" href="tel:+15164308047">(516) 430-8047</a>
-   <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
-  </div>
- </div>
-</header>
-
+<header><div class="wrap">
+ <a class="brand" href="#top" aria-label="Brightly Electric, home"><svg viewBox="0 0 36 36" aria-hidden="true"><rect width="36" height="36" rx="10" fill="#101833"/><path d="M20 5 9 20h7l-2 11 11-15h-7z" fill="#ffc928"/></svg><span><b>Brightly Electric</b><small>DEER PARK, NY</small></span></a>
+ <nav class="main" aria-label="Main"><a href="#services">Services</a><a href="#tripping">What's tripping?</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a></nav>
+ <div class="hc"><a class="btn" href="tel:+15164308047">(516) 430-8047</a></div>
+</div></header>
 <main id="main">
-<section class="hero dark" id="top" style="padding:0">
- <div class="wrap hero-grid">
-  <div>
-   <p class="label">Electrician · Serving from Deer Park, NY</p>
-   <h1>Power problems, <em>fixed and explained.</em></h1>
-   <p class="lede">Emergency repairs, breaker boxes, circuit breakers and ceiling fans. From a Deer Park electrician that reviewers keep calling fair on price.</p>
-   <div class="actions">
-    <a class="btn btn-fil" href="tel:+15164308047">Call (516) 430-8047</a>
-    <a class="btn btn-out" href="#contact">Request a visit</a>
-   </div>
-  </div>
-  <div class="lamp">
-   <svg viewBox="0 0 220 330" width="260" role="img" aria-label="Illustration: a hanging light bulb that lights up when you flip the switch">
-    <path d="M110 0 V86" stroke="#b8c0dc" stroke-width="3"/>
-    <rect x="92" y="84" width="36" height="26" rx="4" fill="#8892b8"/>
-    <g class="rays" stroke="#ffc83d" stroke-width="5" stroke-linecap="round">
-     <path d="M20 190 H0M220 190 H200M40 120 L26 106M180 120 L194 106M40 260 L26 274M180 260 L194 274"/>
-    </g>
-    <path class="glass" d="M110 110 C60 116 40 160 46 196 C52 232 80 240 86 270 H134 C140 240 168 232 174 196 C180 160 160 116 110 110Z" fill="#1c2a5c" fill-opacity="1" stroke="#b8c0dc" stroke-width="3"/>
-    <path class="fil-wire" d="M96 266 V214 L100 196 L106 214 L110 196 L114 214 L120 196 L124 214 V266" stroke="#b8c0dc" stroke-width="3" fill="none" stroke-linejoin="round"/>
-    <g fill="#b8c0dc"><rect x="84" y="272" width="52" height="12" rx="3"/><rect x="86" y="286" width="48" height="12" rx="3"/><rect x="88" y="300" width="44" height="12" rx="3"/><path d="M98 314 H122 L116 326 H104Z"/></g>
-   </svg>
-   <div class="switch">
-    <button class="plate" id="sw" aria-pressed="false" aria-label="Light switch"><span class="tog"></span></button>
-    <p id="sw-hint">Try the switch.</p>
-   </div>
-  </div>
+<section class="hero" id="top"><div class="wrap two">
+ <div class="card copy">
+  <p class="lab rv">Electrician &middot; Deer Park, NY</p>
+  <h1 class="rv" style="--d:1;margin-top:.8rem">Power problems, <span>fixed and explained.</span></h1>
+  <p class="l rv" style="--d:2">Emergency repairs, breaker boxes, circuit breakers and ceiling fans, from a Deer Park electrician reviewers keep calling fair on price.</p>
+  <div class="cta rv" style="--d:3"><a class="btn" href="tel:+15164308047">Call (516) 430-8047</a><a class="btn o" href="#contact">Request a visit</a></div>
  </div>
-</section>
-<div class="readout">
- <ul class="wrap" aria-label="At a glance">
-  <li><b>5.0</b><span>Google rating</span></li>
-  <li><b>62</b><span>Google reviews</span></li>
-  <li><b>Deer Park</b><span>Home base</span></li>
-  <li><b>6 PM</b><span>Closing time</span></li>
- </ul>
-</div>
+ <div class="card room rv" id="room" style="--d:2">
+  <svg viewBox="0 0 600 480" aria-hidden="true">
+   <rect class="wall" width="600" height="480"/>
+   <rect class="floor" y="390" width="600" height="90"/>
+   <radialGradient id="gl" cx=".5" cy=".3" r=".6"><stop offset="0" stop-color="#fff7cf"/><stop offset="1" stop-color="#fff7cf" stop-opacity="0"/></radialGradient>
+   <rect class="glow" width="600" height="480" fill="url(#gl)"/>
+   <rect x="296" y="0" width="8" height="96" fill="#101833"/>
+   <g class="fan"><ellipse class="blade" cx="210" cy="120" rx="86" ry="14"/><ellipse class="blade" cx="390" cy="120" rx="86" ry="14"/></g>
+   <circle cx="300" cy="120" r="22" fill="#101833"/>
+   <path class="bulb" d="M282 138h36l-6 26h-24z"/>
+   <rect x="70" y="250" width="150" height="140" rx="8" fill="#101833" opacity=".08"/>
+   <rect x="400" y="230" width="120" height="160" rx="10" fill="#101833" opacity=".1"/>
+   <rect x="430" y="200" width="60" height="30" rx="6" fill="#101833" opacity=".1"/>
+  </svg>
+  <span class="tag" id="rtag">Lights off</span>
+  <div class="sw"><span>Try the switch</span><button class="tog" type="button" id="tog" aria-pressed="false" aria-label="Light switch"><i></i></button></div>
+ </div>
+</div></section>
 
-<section id="services">
- <div class="wrap">
-  <div class="sec-head">
-   <p class="label">Panel schedule</p>
-   <h2>What Brightly handles, labeled like a good panel should be.</h2>
-   <p>Every circuit in your house should have a clear label. So should every service.</p>
-  </div>
-  <div class="sched-grid">
-   <figure class="door" style="margin:0">
-    <div class="inner" aria-hidden="true">
-     <div class="main"><i></i>MAIN</div>
-     <div class="brk on"><i></i>01</div><div class="brk on"><i></i>02</div>
-     <div class="brk on"><i></i>03</div><div class="brk on"><i></i>04</div>
-     <div class="brk"><i></i>05</div><div class="brk"><i></i>06</div>
-     <div class="brk"><i></i>07</div><div class="brk"><i></i>08</div>
-     <div class="brk"><i></i>09</div><div class="brk"><i></i>10</div>
-     <div class="brk"><i></i>11</div><div class="brk"><i></i>12</div>
-    </div>
-    <figcaption>Illustration. Circuits 01 to 04 match the directory.</figcaption>
-   </figure>
-   <div class="dir">
-    <div class="dir-h"><span>CKT</span><span>Directory</span></div>
-    <ol>
-     <li><span class="no">01</span><div class="body"><h3>Emergency repairs</h3><p>Lost power to part of the house, a dead outlet, a breaker that will not reset. Call and describe what happened.</p></div></li>
-     <li><span class="no">02</span><div class="body"><h3>Breaker boxes and panels</h3><p>Panel repairs and replacements for older or overloaded boxes, with clear labels when the job is done.</p></div></li>
-     <li><span class="no">03</span><div class="body"><h3>Circuit breakers</h3><p>Worn or faulty breakers diagnosed and replaced, and circuits that trip too often traced to the cause.</p></div></li>
-     <li><span class="no">04</span><div class="body"><h3>Ceiling fan installation</h3><p>New fans hung and wired, or old fixtures swapped for a fan, balanced and running quietly.</p></div></li>
-     <li class="spare"><span class="no">05</span><div class="body">SPARE · Ask about other electrical work</div></li>
-    </ol>
-   </div>
-  </div>
- </div>
-</section>
+<section class="stats" aria-label="At a glance"><div class="wrap"><ul>
+ <li class="rv"><b>5.0</b><span>Google rating</span></li>
+ <li class="rv" style="--d:1"><b>62</b><span>Google reviews</span></li>
+ <li class="rv" style="--d:2"><b>Deer Park</b><span>Home base</span></li>
+ <li class="rv" style="--d:3"><b>6 PM</b><span>Closing time</span></li>
+</ul></div></section>
 
-<section class="dark" id="tripping">
- <div class="wrap">
-  <div class="sec-head">
-   <p class="label">Sample tool</p>
-   <h2>What's tripping?</h2>
-   <p>Pick the one that sounds most like your breaker. You will get a plain-English idea of what is going on and what to do next.</p>
-  </div>
-  <div class="tool-grid">
-   <div>
-    <span class="sample">Sample feature · General guidance</span>
-    <fieldset style="border:0;margin:0;padding:0">
-     <legend class="mono" style="color:var(--mute);margin-bottom:var(--s3)">When does it trip?</legend>
-     <ul class="sym">
-      <li><label><input type="radio" name="sym" value="overload"><span><b>When a lot runs at once</b><span>Space heater, microwave, hair dryer or AC on the same circuit.</span></span></label></li>
-      <li><label><input type="radio" name="sym" value="short"><span><b>Right away when I reset it</b><span>Even with things unplugged, it snaps back off.</span></span></label></li>
-      <li><label><input type="radio" name="sym" value="gfci"><span><b>An outlet with Test and Reset buttons</b><span>Kitchen, bathroom, garage or outdoor outlets, often after rain.</span></span></label></li>
-      <li><label><input type="radio" name="sym" value="random"><span><b>Randomly, no pattern</b><span>Nothing new plugged in, but it trips every few days.</span></span></label></li>
-      <li><label><input type="radio" name="sym" value="hot"><span><b>The panel is hot, buzzing or smells burnt</b><span>Warm breaker, crackling sound, scorch marks or a burning smell.</span></span></label></li>
-     </ul>
-    </fieldset>
-   </div>
-   <div class="result" aria-live="polite">
-    <div class="mini" aria-hidden="true"><i></i><i id="t1"></i><i></i><i></i><i></i></div>
-    <span class="lvl" id="r-lvl">Waiting</span>
-    <h3 id="r-title">Pick a symptom</h3>
-    <div id="r-body"><p>Your result shows here. Nothing is sent anywhere.</p></div>
-    <a class="btn btn-ink" href="tel:+15164308047">Call (516) 430-8047</a>
-    <p class="fine" style="margin-top:var(--s3)">General guidance only, not a diagnosis. Never open a panel cover yourself. If you smell burning or see smoke, leave the area and call 911.</p>
-   </div>
-  </div>
+<section class="sec" id="services"><div class="wrap">
+ <div class="head"><div><p class="lab">Services</p><h2 class="rv">What Brightly handles.</h2></div><p class="rv" style="--d:1">Four things done well. Ask about other electrical work when you call.</p></div>
+ <div class="sv">
+  <article class="card svc rv"><span class="ic"><svg viewBox="0 0 30 30"><path d="M17 3 6 17h7l-2 10 11-14h-7z" fill="#101833"/></svg></span><span class="n">01</span><h3>Emergency repairs</h3><p>Lost power to part of the house, a dead outlet or a breaker that will not reset.</p><a href="tel:+15164308047">Call now</a></article>
+  <article class="card svc rv" style="--d:1"><span class="ic"><svg viewBox="0 0 30 30"><rect x="6" y="3" width="18" height="24" rx="3" fill="none" stroke="#101833" stroke-width="2.4"/><path d="M11 9h8M11 14h8M11 19h8" stroke="#101833" stroke-width="2.4"/></svg></span><span class="n">02</span><h3>Breaker boxes</h3><p>Panel repairs and replacements for older or overloaded boxes, labeled clearly when done.</p><a href="#contact">Request a visit</a></article>
+  <article class="card svc rv" style="--d:2"><span class="ic"><svg viewBox="0 0 30 30"><rect x="9" y="4" width="12" height="22" rx="3" fill="none" stroke="#101833" stroke-width="2.4"/><rect x="12" y="7" width="6" height="8" rx="1.5" fill="#101833"/></svg></span><span class="n">03</span><h3>Circuit breakers</h3><p>Worn breakers replaced and circuits that trip too often traced to the cause.</p><a href="#tripping">What's tripping?</a></article>
+  <article class="card svc rv" style="--d:3"><span class="ic"><svg viewBox="0 0 30 30"><circle cx="15" cy="15" r="3" fill="#101833"/><path d="M15 12C14 6 9 4 6 6c4 1 6 4 6 7M18 15c6-1 8-6 6-9-1 4-4 6-7 6M12 15c-6 1-8 6-6 9 1-4 4-6 7-6" fill="#101833"/></svg></span><span class="n">04</span><h3>Ceiling fans</h3><p>New fans hung and wired, or old fixtures swapped for a fan, balanced and quiet.</p><a href="#contact">Request a visit</a></article>
  </div>
-</section>
+</div></section>
 
-<section id="reviews">
- <div class="wrap">
-  <div class="sec-head">
-   <p class="label">Google reviews</p>
-   <h2>Sixty-two Google reviews. A 5.0 rating.</h2>
+<section class="sec trip" id="tripping"><div class="wrap">
+ <div class="head"><div><p class="lab">Sample tool</p><h2 class="rv">What's tripping?</h2></div><p class="rv" style="--d:1">Pick what sounds most like your breaker. You get a plain-English idea of what is going on and what to do next.</p></div>
+ <div class="two">
+  <div class="card rv"><div class="syms" id="syms" role="group" aria-label="When does it trip?"></div></div>
+  <div class="card res rv" id="res" style="--d:1" aria-live="polite" data-l="0">
+   <div class="meter" aria-hidden="true"><i></i><i></i><i></i></div>
+   <span class="lvl" id="rLvl">Waiting</span>
+   <h3 id="rH">Pick a symptom</h3>
+   <p id="rP">Your result shows here. Nothing is sent anywhere.</p>
+   <ol id="rL" hidden></ol>
+   <div class="act"><a class="btn" href="tel:+15164308047">Call (516) 430-8047</a><a class="btn o" href="#contact" id="rBook">Request a visit</a></div>
+   <p class="fine">General guidance only, not a diagnosis. Never open a panel cover yourself. If you smell burning or see smoke, leave the area and call 911.</p>
   </div>
-  <div class="rev-grid">
-   <div class="score"><b>5.0</b><span class="st" aria-hidden="true">★★★★★</span><span class="mono">62 Google reviews</span></div>
-   <figure class="quote">
-    <div><svg viewBox="0 0 40 30" aria-hidden="true"><path d="M0 30V16C0 7 5 2 14 0l2 4c-5 2-7 5-7 9h7v17zM22 30V16C22 7 27 2 36 0l2 4c-5 2-7 5-7 9h7v17z" fill="#e08a00"/></svg>
-    <blockquote>I had a fantastic experience using this company.</blockquote></div>
-    <figcaption><cite>Elijah S., Google review</cite></figcaption>
-   </figure>
-   <figure class="quote">
-    <div><svg viewBox="0 0 40 30" aria-hidden="true"><path d="M0 30V16C0 7 5 2 14 0l2 4c-5 2-7 5-7 9h7v17zM22 30V16C22 7 27 2 36 0l2 4c-5 2-7 5-7 9h7v17z" fill="#e08a00"/></svg>
-    <blockquote>I had a great experience with Cesar of Brightly Electric.</blockquote></div>
-    <figcaption><cite>Google review</cite></figcaption>
-   </figure>
-  </div>
-  <p class="fine" style="margin-top:var(--s4)">Reviewers also mention fair pricing.</p>
  </div>
-</section>
+</div></section>
 
-<section class="dark area" id="area">
- <div class="wrap area-grid">
-  <div>
-   <p class="label">Area and hours</p>
-   <h2 style="font-size:clamp(2.3rem,4.6vw,3.8rem);margin-bottom:var(--s5)">Serving from Deer Park.</h2>
-   <dl>
-    <dt>Based in</dt><dd>Deer Park, NY. Brightly is a service-area business, so the electrician comes to you.</dd>
-    <dt>Hours</dt><dd>Closes 6 PM<br><span class="fine">Full weekly hours and service towns to confirm with the owner.</span></dd>
-    <dt>Phone</dt><dd><a href="tel:+15164308047" style="color:var(--fil);font-weight:700;text-decoration:none;font-size:1.4rem">(516) 430-8047</a></dd>
-   </dl>
-  </div>
-  <div class="wire">
-   <svg viewBox="0 0 460 300" role="img" aria-label="Illustration: a wire running from a Deer Park pin out to houses around it">
-    <rect width="460" height="300" rx="16" fill="#121d45"/>
-    <g stroke="#2a3a70" stroke-width="1"><path d="M0 60H460M0 120H460M0 180H460M0 240H460M92 0V300M184 0V300M276 0V300M368 0V300"/></g>
-    <path d="M230 150 C180 100 120 110 80 70 M230 150 C300 120 330 70 390 60 M230 150 C280 200 340 220 400 240 M230 150 C170 190 130 230 70 240" stroke="#ffc83d" stroke-width="2.5" fill="none" stroke-dasharray="6 6"/>
-    <g fill="#fff8e8"><path d="M70 60 l12 -10 l12 10 v14 h-24z"/><path d="M380 50 l12 -10 l12 10 v14 h-24z"/><path d="M390 230 l12 -10 l12 10 v14 h-24z"/><path d="M60 230 l12 -10 l12 10 v14 h-24z"/></g>
-    <circle cx="230" cy="150" r="30" fill="#ffc83d" opacity=".2"/>
-    <circle cx="230" cy="150" r="14" fill="#ffc83d"/>
-    <text x="230" y="200" text-anchor="middle" fill="#fff8e8" font-family="Space Mono,monospace" font-size="14" font-weight="700">DEER PARK</text>
-   </svg>
-  </div>
+<section class="sec" id="reviews"><div class="wrap">
+ <div class="head"><div><p class="lab">Google reviews</p><h2 class="rv">What customers mention.</h2></div><p class="rv" style="--d:1">Themes from Brightly Electric's public Google listing.</p></div>
+ <div class="rvg">
+  <div class="card score rv"><b>5.0</b><span class="st" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span>Average across 62 Google reviews</span><small style="color:#9aa1bd">Checked October 2026</small></div>
+  <div class="card rv" style="--d:1"><h3>Fair pricing</h3><p>The point reviewers bring up again and again.</p><small>Theme from Google reviews</small></div>
+  <div class="card rv" style="--d:2"><h3>A great experience</h3><p>Customers describe the whole visit as easy, start to finish.</p><small>Theme from Google reviews</small></div>
+  <div class="card rv" style="--d:3"><h3>Ask for Cesar</h3><p>Reviewers name the electrician who did the work.</p><small>Theme from Google reviews</small></div>
  </div>
-</section>
+</div></section>
 
-<section id="contact">
- <div class="wrap form-grid">
-  <div>
-   <p class="label">Request a visit</p>
-   <h2 style="font-size:clamp(2.3rem,4.6vw,3.8rem);margin-bottom:var(--s3)">Tell us what the lights are doing.</h2>
-   <p style="color:var(--soft);font-size:1.1rem">Flickering, tripping, dead outlets or a new fan to hang. A short description helps Brightly come ready.</p>
-   <a class="btn btn-ink" href="tel:+15164308047">Call (516) 430-8047</a>
-  </div>
-  <div class="formbox">
-   <form novalidate>
-    <div class="row">
-     <div class="field"><label for="c-name">Name *</label><input id="c-name" autocomplete="name" required></div>
-     <div class="field"><label for="c-phone">Phone *</label><input id="c-phone" type="tel" autocomplete="tel" required></div>
-    </div>
-    <div class="field"><label for="c-town">Town *</label><input id="c-town" autocomplete="address-level2" required></div>
-    <fieldset class="field">
-     <legend>How soon?</legend>
-     <div class="radios">
-      <label><input type="radio" name="when" value="now">Power is out now</label>
-      <label><input type="radio" name="when" value="week" checked>This week</label>
-      <label><input type="radio" name="when" value="plan">Planning ahead</label>
-     </div>
-    </fieldset>
-    <div class="field"><label for="c-msg">What is happening?</label><textarea id="c-msg" placeholder="Kitchen breaker trips when the microwave and kettle run together."></textarea></div>
-    <p class="err" role="alert"></p>
-    <button class="btn btn-fil" type="submit" style="width:100%">Send request</button>
-    <p class="demo-note">Demo form. This is a website concept. Nothing is sent or saved.</p>
-   </form>
-   <div class="done" hidden tabindex="-1">
-    <h3>Demo complete.</h3>
-    <p>This is a website concept, so nothing was sent or saved. On a live site, Brightly Electric would get your request.</p>
-    <button class="btn btn-ink" type="button">Start over</button>
-   </div>
-  </div>
+<section class="sec" id="contact" style="padding-top:0"><div class="wrap two">
+ <div class="card info rv">
+  <p class="lab">Request a visit</p>
+  <h2>Tell us what the lights are doing.</h2>
+  <p>Flickering, tripping, dead outlets or a new fan to hang. A short description helps Brightly come ready. Brightly is a service-area business, so the electrician comes to you.</p>
+  <div class="mapg" aria-hidden="true"><svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice"><path d="M0 120 C80 100 140 140 220 110 S360 90 400 100" stroke="#c9d5f6" stroke-width="14" fill="none"/><path d="M120 0 L160 200M280 0 L250 200" stroke="#c9d5f6" stroke-width="8"/><circle cx="200" cy="100" r="60" fill="#2350d8" opacity=".1"/><circle cx="200" cy="100" r="34" fill="#2350d8" opacity=".14"/><circle cx="200" cy="100" r="10" fill="#2350d8"/><text x="216" y="88" font-family="Sora,sans-serif" font-weight="700" font-size="15" fill="#101833">Deer Park</text></svg></div>
+  <dl><div><dt>Phone</dt><dd><a href="tel:+15164308047">(516) 430-8047</a></dd></div><div><dt>Hours</dt><dd>Closes 6 PM</dd></div></dl>
  </div>
-</section>
+ <div class="card rv" style="--d:1">
+  <form class="fm" id="fm" novalidate>
+   <div class="r2"><label>Name<input id="fN" autocomplete="name" required><span class="err" hidden>Please enter your name.</span></label><label>Phone<input id="fP" type="tel" autocomplete="tel" required><span class="err" hidden>Please enter a phone number.</span></label></div>
+   <label>Town<input id="fT" autocomplete="address-level2" required><span class="err" hidden>Please enter your town.</span></label>
+   <div><span style="font:600 .9rem var(--head)">How soon?</span><div class="urg" id="urg" role="group" aria-label="How soon" style="margin-top:.4rem"><button type="button" aria-pressed="false" data-u="now">Power is out</button><button type="button" aria-pressed="true" data-u="week">This week</button><button type="button" aria-pressed="false" data-u="plan">Planning</button></div></div>
+   <label class="grow">What is happening?<textarea id="fM" placeholder="Which room, what you noticed, how long it has been going on"></textarea></label>
+   <div class="sub"><button class="btn" type="submit">Send request</button><p>Demo form. This is a website concept. Nothing is sent or saved.</p></div>
+  </form>
+  <div class="ok" id="ok" hidden tabindex="-1"><h3>Demo complete.</h3><p id="okT"></p><p>This is a website concept, so nothing was sent or saved.</p><div><button class="btn o" type="button" id="again">Start over</button></div></div>
+ </div>
+</div></section>
 </main>
-
-<footer>
- <div class="wrap">
-  <div class="f-grid">
-   <div><h3>Brightly Electric, Inc.</h3><p>Electrician serving from Deer Park, NY.</p></div>
-   <div><h3>Call</h3><p><a href="tel:+15164308047">(516) 430-8047</a></p></div>
-   <div><h3>Hours</h3><p>Closes 6 PM</p></div>
-  </div>
-  <p class="disc">Independent website concept designed by Lisette Colon. Not affiliated with or approved by Brightly Electric, Inc. Address, hours, rating and review quotes are from the business's public Google listing, checked October 2026. Service descriptions are illustrative; service list and service area to confirm with the owner. The panel illustration, map graphic, light switch and "What's tripping?" helper are sample features with general guidance only.</p>
- </div>
-</footer>
-<a class="sticky-call" href="tel:+15164308047">Call (516) 430-8047</a>
-
+<div class="mbar"><a class="btn" href="tel:+15164308047">Call</a><a class="btn v" href="#contact">Request a visit</a></div>
+<footer><div class="wrap">
+ <div class="r"><div><b>Brightly Electric, Inc.</b><p>Electrician serving from Deer Park, NY.</p></div><div><b>Call</b><p><a href="tel:+15164308047">(516) 430-8047</a></p></div><div><b>Hours</b><p>Closes 6 PM</p></div></div>
+ <p class="dis">Independent website concept designed by Lisette Colon. Not affiliated with or approved by Brightly Electric, Inc. Hours, rating and review themes are from the business's public Google listing, checked October 2026. Service descriptions are illustrative; service list and service area to confirm with the owner. The room illustration, light switch, map graphic and "What's tripping?" helper are sample features with general guidance only.</p>
+</div></footer>
 <script>
-const mb=document.querySelector('.menu-btn'),nav=document.getElementById('nav');
-mb.addEventListener('click',()=>{const o=mb.getAttribute('aria-expanded')==='true';mb.setAttribute('aria-expanded',!o);nav.classList.toggle('open',!o)});
-nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{mb.setAttribute('aria-expanded','false');nav.classList.remove('open')}));
-
-const sw=document.getElementById('sw'),hint=document.getElementById('sw-hint');
-sw.addEventListener('click',()=>{const on=!document.body.classList.contains('lit');document.body.classList.toggle('lit',on);sw.setAttribute('aria-pressed',on);hint.textContent=on?'That is the idea.':'Try the switch.'});
-
-const R={
- overload:{l:'ok',lt:'Try this first',t:'Probably an overloaded circuit',b:['Unplug the heavy hitters on that circuit, like heaters or kitchen appliances.','Reset the breaker once: push it fully to OFF, then back to ON.','Spread big loads across other outlets. If it keeps tripping in normal use, the circuit may need to be split. Call Brightly.'],trip:true},
- short:{l:'call',lt:'Call an electrician',t:'Could be a short circuit',b:['Do not keep resetting it. A breaker that trips instantly is doing its job.','Leave it off and note what was running when it first tripped.','Call Brightly to trace the wiring or device that is causing it.'],trip:true},
- gfci:{l:'ok',lt:'Try this first',t:'Likely a ground fault outlet (GFCI)',b:['Find the outlet with Test and Reset buttons. It may be in another room, garage or outside.','Unplug what is on it, press Reset, then plug things back in one at a time.','If it trips with nothing plugged in, or after every rain, moisture or a worn outlet may be the cause. Call Brightly.'],trip:false},
- random:{l:'call',lt:'Call an electrician',t:'Could be a worn breaker or a loose connection',b:['Write down when it trips and what was running.','Avoid running heavy loads on that circuit for now.','Have it checked. Random trips can point to a breaker that is wearing out or a connection that is heating up.'],trip:true},
- hot:{l:'urgent',lt:'Urgent',t:'Treat this as an emergency',b:['Do not touch the panel. Keep people away.','If you see smoke or flames, or smell burning, leave the house and call 911.','Once everyone is safe, call Brightly for emergency repairs.'],trip:true}
-};
-document.querySelectorAll('input[name=sym]').forEach(i=>i.addEventListener('change',()=>{
- const r=R[i.value];const lv=document.getElementById('r-lvl');lv.className='lvl '+r.l;lv.textContent=r.lt;
- document.getElementById('r-title').textContent=r.t;
- document.getElementById('r-body').innerHTML='<ol>'+r.b.map(x=>'<li>'+x+'</li>').join('')+'</ol>';
- document.getElementById('t1').classList.toggle('trip',r.trip);
-}));
-
-document.querySelectorAll('form').forEach(f=>{
- const done=f.parentElement.querySelector('.done'),err=f.querySelector('.err');
- f.addEventListener('submit',e=>{e.preventDefault();let first=null;
-  f.querySelectorAll('[required]').forEach(i=>{const ok=i.value.trim()!=='';i.setAttribute('aria-invalid',!ok);if(!ok&&!first)first=i});
-  if(first){err.textContent='Please fill in the highlighted fields.';first.focus();return}
-  err.textContent='';f.hidden=true;done.hidden=false;done.focus()});
- done.querySelector('button').addEventListener('click',()=>{f.reset();f.querySelectorAll('[aria-invalid]').forEach(i=>i.removeAttribute('aria-invalid'));f.hidden=false;done.hidden=true;f.querySelector('input').focus()});
-});
+(function(){
+"use strict";
+var d=document,$=function(s){return d.querySelector(s)},$$=function(s){return [].slice.call(d.querySelectorAll(s))};
+d.documentElement.classList.add("js");
+var pend=$$(".rv");function tick(){var vh=innerHeight;pend=pend.filter(function(el){if(el.getBoundingClientRect().top<vh*.92){el.classList.add("in");return false;}return true;});}
+addEventListener("scroll",tick,{passive:true});setTimeout(tick,30);setTimeout(tick,400);
+/* switch */
+var room=$("#room"),tog=$("#tog");
+function setL(on){room.classList.toggle("on",on);tog.setAttribute("aria-pressed",on);$("#rtag").textContent=on?"Lights on, fan running":"Lights off";}
+tog.addEventListener("click",function(){setL(tog.getAttribute("aria-pressed")!=="true")});
+setTimeout(function(){setL(true)},900);
+/* tripping */
+var S=[
+ ["When a lot runs at once","Space heater, microwave, hair dryer or AC on the same circuit.",1,"Likely an overloaded circuit","Too much is plugged into one circuit, so the breaker shuts it off to protect the wiring. That is the breaker doing its job.",["Unplug a few things on that circuit.","Reset the breaker once.","If it keeps happening, ask about adding a circuit."]],
+ ["Right away when I reset it","Even with things unplugged, it snaps back off.",3,"Could be a short circuit","A breaker that trips instantly can point to a short in the wiring or a device. Do not keep resetting it.",["Leave the breaker off.","Note which outlets and lights are out.","Call for a repair."]],
+ ["An outlet with Test and Reset buttons","Kitchen, bathroom, garage or outdoor outlets, often after rain.",1,"Probably a GFCI outlet","These outlets trip on purpose when they sense moisture or a fault, to protect you from shock.",["Look for a tripped GFCI outlet nearby.","Press Reset firmly.","If it will not reset, or trips again, call."]],
+ ["Randomly, no pattern","Nothing new plugged in, but it trips every few days.",2,"Worth a closer look","A worn breaker or a loose connection can cause random trips. It is not an emergency, but it should be checked.",["Write down when it trips and what was running.","Avoid heavy loads on that circuit.","Book a visit this week."]],
+ ["Panel is hot, buzzing or smells burnt","Warm breaker, crackling sound, scorch marks or a burning smell.",3,"Treat this as urgent","Heat, buzzing or a burning smell at the panel can mean a dangerous connection.",["Do not touch the panel.","If you see smoke or smell burning, leave and call 911.","Then call Brightly for an emergency repair."]]];
+$("#syms").innerHTML=S.map(function(s,i){return '<button type="button" class="sym" aria-pressed="false" data-i="'+i+'"><span class="k">'+(i+1)+'</span><span><b>'+s[0]+'</b><small>'+s[1]+'</small></span></button>'}).join("");
+var L=["","Low concern","Get it checked","Urgent"];
+$("#syms").addEventListener("click",function(e){var b=e.target.closest(".sym");if(!b)return;var s=S[+b.getAttribute("data-i")];$$(".sym").forEach(function(o){o.setAttribute("aria-pressed",o===b)});
+ var r=$("#res");r.setAttribute("data-l",s[2]);$("#rLvl").textContent=L[s[2]];$("#rH").textContent=s[3];$("#rP").textContent=s[4];var ol=$("#rL");ol.hidden=false;ol.innerHTML=s[5].map(function(x){return "<li>"+x+"</li>"}).join("");
+ $("#rBook").onclick=function(){var u=s[2]===3?"now":"week";$$("#urg button").forEach(function(o){o.setAttribute("aria-pressed",o.getAttribute("data-u")===u)});$("#fM").value="Breaker: "+s[0].toLowerCase()+".";};});
+$(".sym").click();
+/* form */
+$$("#urg button").forEach(function(b){b.addEventListener("click",function(){$$("#urg button").forEach(function(o){o.setAttribute("aria-pressed",o===b)})})});
+var f=$("#fm");f.addEventListener("submit",function(e){e.preventDefault();var bad=null;$$("#fm [required]").forEach(function(i){var ok=!!i.value.trim();i.parentNode.querySelector(".err").hidden=ok;i.setAttribute("aria-invalid",!ok);if(!ok&&!bad)bad=i;});if(bad){bad.focus();return;}
+ $("#okT").textContent="Thanks, "+$("#fN").value.trim().split(" ")[0]+". On a live site Brightly Electric would get your request ("+$('#urg [aria-pressed="true"]').textContent.toLowerCase()+") and call you back.";f.hidden=true;$("#ok").hidden=false;$("#ok").focus();});
+$("#again").addEventListener("click",function(){f.reset();f.hidden=false;$("#ok").hidden=true;});
+})();
 </script>
 </body>
 </html>
