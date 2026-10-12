@@ -54,24 +54,40 @@ nav.main a:hover{color:var(--blue)}
 .hero .copy{justify-content:center;background:transparent;border:0;padding:0}
 .hero p.l{color:var(--soft);font-size:1.13rem;max-width:44ch;margin:1.3rem 0 1.9rem}
 .cta{display:flex;flex-wrap:wrap;gap:.7rem}
-.room{position:relative;padding:0;overflow:hidden;background:#232b47;transition:background .6s var(--ease);aspect-ratio:5/4}
-.room.on{background:#fff6d6}
-.room svg{position:absolute;inset:0;width:100%;height:100%}
-.room .glow{opacity:0;transition:opacity .6s var(--ease)}
-.room.on .glow{opacity:1}
-.room .wall{fill:#2c3557;transition:fill .6s}.room.on .wall{fill:#fff1c2}
-.room .floor{fill:#1e2540;transition:fill .6s}.room.on .floor{fill:#efdcae}
-.room .bulb{fill:#4a5170;transition:fill .4s}.room.on .bulb{fill:#ffd84a}
-.room .blade{fill:#3a4262;transition:fill .6s}.room.on .blade{fill:#c49a63}
-.room .fan{transform-origin:300px 120px;transform-box:view-box}
-.room.on .fan{animation:spin 1.6s linear infinite}
-@keyframes spin{to{transform:rotate(360deg)}}
-.sw{position:absolute;right:20px;bottom:20px;display:flex;align-items:center;gap:.8rem;background:#fff;border-radius:16px;padding:.55rem .7rem .55rem 1rem;box-shadow:0 14px 30px -14px rgba(0,0,0,.45)}
-.sw span{font:600 .9rem var(--head)}
-.tog{position:relative;width:52px;height:78px;border-radius:12px;border:2px solid var(--ink);background:#f1f0ea;cursor:pointer;padding:0}
-.tog i{position:absolute;left:8px;right:8px;height:30px;border-radius:8px;background:var(--ink);bottom:8px;transition:bottom .3s var(--ease),background .3s}
-.tog[aria-pressed=true] i{bottom:36px;background:var(--volt)}
-.tag{position:absolute;left:20px;top:20px;background:rgba(255,255,255,.95);border-radius:12px;padding:.45rem .8rem;font:600 .86rem var(--head)}
+.pnl{background:var(--ink);border-color:var(--ink);color:#fff;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);grid-template-rows:minmax(0,1fr) auto;gap:16px;padding:clamp(1rem,2.4vw,1.6rem)}
+.pbox{position:relative;background:#1a2348;border:1px solid #2c3768;border-radius:14px;padding:12px;display:flex;flex-direction:column;gap:12px}
+.pbox::before{content:"";position:absolute;left:50%;top:64px;bottom:14px;width:6px;margin-left:-3px;border-radius:3px;background:#2c3768}
+.pbox::after{content:"";position:absolute;left:50%;top:64px;bottom:14px;width:6px;margin-left:-3px;border-radius:3px;background:var(--volt);box-shadow:0 0 14px 2px rgba(255,201,40,.45);animation:bus 1s var(--ease) 1.5s both}
+@keyframes bus{from{opacity:0}}
+.mn{position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:10px;height:40px;padding:0 10px;border-radius:8px;background:#232d59;font:700 .68rem var(--head);letter-spacing:.16em;color:#9aa1bd}
+.mn .sl{width:56px}
+.brk{position:relative;z-index:1;flex:1;list-style:none;margin:0;padding:0;display:grid;grid-auto-rows:minmax(34px,1fr);grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 22px}
+.brk li{display:flex;align-items:center;gap:8px;padding:0 8px;border-radius:7px;background:#232d59}
+.brk li:nth-child(even){flex-direction:row-reverse}
+.brk b{font:700 .72rem var(--head);color:#9aa1bd;min-width:1.2em;text-align:center}
+.sl{position:relative;flex:1;max-width:46px;height:18px;border-radius:5px;background:#0c1229;margin-left:auto}
+.brk li:nth-child(even) .sl{margin-left:0;margin-right:auto}
+.sl i{position:absolute;top:2px;bottom:2px;width:20px;right:2px;border-radius:3px;background:#f3eedf;box-shadow:inset -3px 0 0 var(--volt);animation:flip .45s var(--ease) both;animation-delay:calc(.5s + var(--i,0)*70ms)}
+.brk li:nth-child(even) .sl i{right:auto;left:2px;box-shadow:inset 3px 0 0 var(--volt);--off:18px}
+.sl i{--off:-18px}
+@keyframes flip{from{transform:translateX(var(--off));box-shadow:none}}
+.brk li.t .sl i{transform:translateX(-11px);box-shadow:inset -3px 0 0 #ff7a5c;animation:trip 2.4s var(--ease) both;animation-delay:calc(.5s + var(--i,0)*70ms)}
+@keyframes trip{0%{transform:translateX(-18px);box-shadow:none}20%,70%{transform:none;box-shadow:inset -3px 0 0 var(--volt)}}
+.brk li.t{box-shadow:inset 0 0 0 1.5px #ff7a5c}
+.dir{background:#f7f1e1;color:var(--ink);border-radius:12px;padding:14px 16px;display:flex;flex-direction:column;justify-content:center}
+.dir .dh{margin:0 0 6px;font:700 .68rem var(--head);letter-spacing:.16em;text-transform:uppercase;color:var(--soft)}
+.dir ol{list-style:none;margin:0;padding:0}
+.dir li{display:flex;align-items:baseline;gap:10px;padding:5px 0;border-bottom:1px solid #e4dcc6;font-size:.9rem;line-height:1.25}
+.dir li:last-child{border-bottom:0}
+.dir li b{font:700 .74rem var(--head);min-width:1.5em;color:var(--soft)}
+.dir li.t{color:#b0321f;font-weight:600}
+.dir li.t b{color:#b0321f}
+.dir li.t em{margin-left:auto;font:700 .62rem var(--head);letter-spacing:.12em;text-transform:uppercase;font-style:normal;animation:tag .4s var(--ease) 2.2s both}
+@keyframes tag{from{opacity:0}}
+.pl{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:48px;padding:.2rem .2rem 0;color:#fff;text-decoration:none;font:600 .98rem var(--head);border-top:1px solid #2c3768;padding-top:.9rem}
+.pl span{color:var(--volt);white-space:nowrap}
+.pl:hover span{text-decoration:underline;text-underline-offset:4px}
+@media(max-width:520px){.pnl{grid-template-columns:minmax(0,1fr)}.dir ol{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:16px}.dir li:nth-last-child(2){border-bottom:0}.pl{flex-wrap:wrap;gap:.2rem 1rem}}
 /* stats */
 .stats{border-block:1px solid var(--line);background:var(--card)}
 .stats ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
@@ -183,22 +199,10 @@ footer .dis{margin-top:1.4rem;padding-top:1rem;border-top:1px solid var(--line);
   <p class="l rv" style="--d:2">Emergency repairs, breaker boxes, circuit breakers and ceiling fans, from a Deer Park electrician reviewers keep calling fair on price.</p>
   <div class="cta rv" style="--d:3"><a class="btn" href="tel:+15164308047">Call (516) 430-8047</a><a class="btn o" href="#contact">Request a visit</a></div>
  </div>
- <div class="card room rv" id="room" style="--d:2">
-  <svg viewBox="0 0 600 480" aria-hidden="true">
-   <rect class="wall" width="600" height="480"/>
-   <rect class="floor" y="390" width="600" height="90"/>
-   <radialGradient id="gl" cx=".5" cy=".3" r=".6"><stop offset="0" stop-color="#fff7cf"/><stop offset="1" stop-color="#fff7cf" stop-opacity="0"/></radialGradient>
-   <rect class="glow" width="600" height="480" fill="url(#gl)"/>
-   <rect x="296" y="0" width="8" height="96" fill="#101833"/>
-   <g class="fan"><ellipse class="blade" cx="210" cy="120" rx="86" ry="14"/><ellipse class="blade" cx="390" cy="120" rx="86" ry="14"/></g>
-   <circle cx="300" cy="120" r="22" fill="#101833"/>
-   <path class="bulb" d="M282 138h36l-6 26h-24z"/>
-   <rect x="70" y="250" width="150" height="140" rx="8" fill="#101833" opacity=".08"/>
-   <rect x="400" y="230" width="120" height="160" rx="10" fill="#101833" opacity=".1"/>
-   <rect x="430" y="200" width="60" height="30" rx="6" fill="#101833" opacity=".1"/>
-  </svg>
-  <span class="tag" id="rtag">Lights off</span>
-  <div class="sw"><span>Try the switch</span><button class="tog" type="button" id="tog" aria-pressed="false" aria-label="Light switch"><i></i></button></div>
+ <div class="card pnl rv" style="--d:2">
+  <div class="pbox" aria-hidden="true"><div class="mn"><span>Main</span><span class="sl"><i style="--i:0"></i></span></div><ol class="brk"><li style="--i:1"><b>1</b><span class="sl"><i></i></span></li><li style="--i:2"><b>2</b><span class="sl"><i></i></span></li><li style="--i:3"><b>3</b><span class="sl"><i></i></span></li><li style="--i:4"><b>4</b><span class="sl"><i></i></span></li><li style="--i:5"><b>5</b><span class="sl"><i></i></span></li><li style="--i:6"><b>6</b><span class="sl"><i></i></span></li><li class="t" style="--i:7"><b>7</b><span class="sl"><i></i></span></li><li style="--i:8"><b>8</b><span class="sl"><i></i></span></li><li style="--i:9"><b>9</b><span class="sl"><i></i></span></li><li style="--i:10"><b>10</b><span class="sl"><i></i></span></li><li style="--i:11"><b>11</b><span class="sl"><i></i></span></li><li style="--i:12"><b>12</b><span class="sl"><i></i></span></li></ol></div>
+  <div class="dir" aria-hidden="true"><p class="dh">Circuit directory</p><ol><li><b>1</b>Kitchen</li><li><b>2</b>Fridge</li><li><b>3</b>Living room</li><li><b>4</b>Dining room</li><li><b>5</b>Bedrooms</li><li><b>6</b>Bath GFCI</li><li class="t"><b>7</b>Garage<em>Tripped</em></li><li><b>8</b>Laundry</li><li><b>9</b>Den fan</li><li><b>10</b>Outdoor GFCI</li><li><b>11</b>Furnace</li><li><b>12</b>A/C</li></ol></div>
+  <a class="pl" href="#tripping">A breaker keeps tripping? <span>See what's tripping &rarr;</span></a>
  </div>
 </div></section>
 
@@ -268,7 +272,7 @@ footer .dis{margin-top:1.4rem;padding-top:1rem;border-top:1px solid var(--line);
 <div class="mbar"><a class="btn" href="tel:+15164308047">Call</a><a class="btn v" href="#contact">Request a visit</a></div>
 <footer><div class="wrap">
  <div class="r"><div><b>Brightly Electric, Inc.</b><p>Electrician serving from Deer Park, NY.</p></div><div><b>Call</b><p><a href="tel:+15164308047">(516) 430-8047</a></p></div><div><b>Hours</b><p>Closes 6 PM</p></div></div>
- <p class="dis">Independent website concept designed by Lisette Colon. Not affiliated with or approved by Brightly Electric, Inc. Hours, rating and review themes are from the business's public Google listing, checked October 2026. Service descriptions are illustrative; service list and service area to confirm with the owner. The room illustration, light switch, map graphic and "What's tripping?" helper are sample features with general guidance only.</p>
+ <p class="dis">Independent website concept designed by Lisette Colon. Not affiliated with or approved by Brightly Electric, Inc. Hours, rating and review themes are from the business's public Google listing, checked October 2026. Service descriptions are illustrative; service list and service area to confirm with the owner. The breaker panel illustration and circuit labels, map graphic and "What's tripping?" helper are sample features with general guidance only.</p>
 </div></footer>
 <script>
 (function(){
@@ -277,11 +281,6 @@ var d=document,$=function(s){return d.querySelector(s)},$$=function(s){return []
 d.documentElement.classList.add("js");
 var pend=$$(".rv");function tick(){var vh=innerHeight;pend=pend.filter(function(el){if(el.getBoundingClientRect().top<vh*.92){el.classList.add("in");return false;}return true;});}
 addEventListener("scroll",tick,{passive:true});setTimeout(tick,30);setTimeout(tick,400);
-/* switch */
-var room=$("#room"),tog=$("#tog");
-function setL(on){room.classList.toggle("on",on);tog.setAttribute("aria-pressed",on);$("#rtag").textContent=on?"Lights on, fan running":"Lights off";}
-tog.addEventListener("click",function(){setL(tog.getAttribute("aria-pressed")!=="true")});
-setTimeout(function(){setL(true)},900);
 /* tripping */
 var S=[
  ["When a lot runs at once","Space heater, microwave, hair dryer or AC on the same circuit.",1,"Likely an overloaded circuit","Too much is plugged into one circuit, so the breaker shuts it off to protect the wiring. That is the breaker doing its job.",["Unplug a few things on that circuit.","Reset the breaker once.","If it keeps happening, ask about adding a circuit."]],
